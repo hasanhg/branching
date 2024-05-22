@@ -1,6 +1,17 @@
-def greet(name: str = "world"):
-    print(f"Hello {name}")
+class Greeter:
+    @classmethod
+    def greet(cls, name: str = "world"):
+        print(f"Hello, {name}!")
+        
+    @classmethod
+    def foo(cls):
+        print("foo")
+    
+    @classmethod
+    def greet_again(cls, name: str = "world"):
+        print(f"Hello, again {name}!")
 
 
 if __name__ == "__main__":
-    greet()
+    Greeter.greet()
+    Greeter.greet_again()
