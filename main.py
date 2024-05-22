@@ -1,10 +1,14 @@
 class Greeter:
     @classmethod
-    def greet(self, name: str = "world"):
+    def greet(cls, name: str = "world"):
         print(f"Hello {name}")
+        
+    @classmethod
+    def foo(cls):
+        print("foo")
     
     @classmethod
-    def greet_again(self, name: str = "world"):
+    def greet_again(cls, name: str = "world"):
         print(f"Hello again {name}")
 
 
