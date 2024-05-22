@@ -1,7 +1,7 @@
 class Greeter:
     @classmethod
     def greet(cls, name: str = "world"):
-        print(f"Hello {name}")
+        print(f"Hello, {name}")
         
     @classmethod
     def foo(cls):
@@ -9,7 +9,7 @@ class Greeter:
     
     @classmethod
     def greet_again(cls, name: str = "world"):
-        print(f"Hello again {name}")
+        print(f"Hello, again {name}")
 
 
 if __name__ == "__main__":
